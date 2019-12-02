@@ -7,5 +7,9 @@
 	<classpathentry kind="lib" path="lib/ocl-1.1.0-v200706201508.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi-2.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/eclipse-emf-ecore-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi-2.12.0.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.scada.da.server.jdbc-0.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/simple-xml-2.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

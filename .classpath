@@ -2,14 +2,12 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="lib/eclipse-emf-common-2.3.0.jar"/>
-	<classpathentry kind="lib" path="lib/ecore-1.1.0-v200706071450.jar"/>
-	<classpathentry kind="lib" path="lib/ocl-1.1.0-v200706201508.jar"/>
-	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.jar"/>
-	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi-2.7.0.jar"/>
-	<classpathentry kind="lib" path="lib/eclipse-emf-ecore-2.3.1.jar"/>
-	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi-2.12.0.jar"/>
-	<classpathentry kind="lib" path="lib/org.eclipse.scada.da.server.jdbc-0.3.0.jar"/>
-	<classpathentry kind="lib" path="lib/simple-xml-2.7.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf_2.8.0.v20180706-1146.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.common_2.15.0.v20180914-1817.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore_2.16.0.v20181124-0637.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.ocl_3.10.100.v20181210-1441.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi_2.15.0.v20180706-1146.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.ocl.ecore_3.10.100.v20181210-1441.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

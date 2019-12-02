@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/eclipse-emf-common-2.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/ecore-1.1.0-v200706071450.jar"/>
+	<classpathentry kind="lib" path="lib/ocl-1.1.0-v200706201508.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi-2.7.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

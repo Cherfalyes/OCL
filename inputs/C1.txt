@@ -1,2 +1,0 @@
-context  UML::Actions::AcceptCallAction
-inv unmarshall : isUnmarshall = true

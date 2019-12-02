@@ -194,7 +194,7 @@ protected void XmlToOCL(String path) {
 		//test.OCLToXML ("./inputs/contr-xml.xmi");
 		//test.loadModel("src/BMethod.ecore", "src/BMethod.oclxmi");
 		//test.XmlToOCL("./inputs/xmlToOCl.oclxmi");
-		test.loadModel("UML.ecore", "/home/echerfa/Desktop/Bad Smells/MM/OMG/UML/C1.ocl");
+		test.loadModel("./inputs/UML.ecore", "./outputs/C1.ocl");
 		//test.OCLToXML("/home/echerfa/Desktop/Bad Smells/MM/OMG/UML/C1.txt");
 			
 		   

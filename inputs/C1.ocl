@@ -1,6 +1,8 @@
-package UML::Actions::CompleteActions
+import uml : 'http://www.eclipse.org/uml2/4.0.0/UML#/'
 
-context AcceptCallAction inv : 
+package uml
+
+context UML::AcceptCallAction inv : 
 isUnmarshall = true
 
 endpackage

@@ -1,0 +1,5 @@
+package UML::Actions::CompleteActions
+context  AcceptCallAction
+inv trigger_call_event : trigger->size()=1 and
+trigger-> asSequence() -> first().event.oclIsKindOf(CallEvent)
+endpackage

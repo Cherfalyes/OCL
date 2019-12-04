@@ -1,3 +1,4 @@
+package ocl.parser;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -78,8 +79,8 @@ public void loadModel(String pathModel, String pathOCL){
 		
 		
 		
-		EPackage metaModel = (EPackageImpl) resourceModel.getContents().get(0);
-		EList<EObject> modelContents=resourceModel.getContents();
+		EPackage metaModel = (EPackageImpl) resource.getContents().get(0);
+		EList<EObject> modelContents=resource.getContents();
 				// Load OCL file
 
 				
@@ -162,7 +163,7 @@ protected void XmlToOCL(String path) {
 		stringOCL += "context " + context.getType().getEPackage().getName()+
 				"::"+context.getType().getName() + "\n"
 				+ "inv " + Contrainte.getName() + ":\n\t" +	body.accept(ToString.getInstance(body)) + "\n\n";
-		
+		System.out.println(stringOCL);
 	}
 		
 			
@@ -194,7 +195,9 @@ protected void XmlToOCL(String path) {
 		//test.OCLToXML ("./inputs/contr-xml.xmi");
 		//test.loadModel("src/BMethod.ecore", "src/BMethod.oclxmi");
 		//test.XmlToOCL("./inputs/xmlToOCl.oclxmi");
-		test.loadModel("./inputs/UML.ecore", "./outputs/C1.ocl");
+		test.loadModel("./outputs/UML.ecore", "./inputs/C2.ocl");
+		//test.OCLToXML("./outputs/UMLC.xmi");
+		//test.XmlToOCL("./outputs/C1.xmi");
 		//test.OCLToXML("/home/echerfa/Desktop/Bad Smells/MM/OMG/UML/C1.txt");
 			
 		   

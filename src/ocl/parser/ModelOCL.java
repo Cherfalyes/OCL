@@ -8,11 +8,6 @@ import java.io.InputStream;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
-
-
-
-
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
@@ -23,13 +18,11 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 import org.eclipse.ocl.OCL;
 import org.eclipse.ocl.OCLInput;
 import org.eclipse.ocl.ParserException;
@@ -39,7 +32,7 @@ import org.eclipse.ocl.ecore.EcoreEnvironmentFactory;
 import org.eclipse.ocl.ecore.SendSignalAction;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.eclipse.ocl.expressions.Variable;
-
+import org.eclipse.uml2.*;
 
 public class ModelOCL {
 
@@ -47,7 +40,6 @@ public class ModelOCL {
 	 * @param args
 	 */
 	private ResourceSet resSet;
-	private Resource resourceModel;
 	private Collection<Constraint> Contraintes;
 	
 	// Le constructeur (charger les variables et les instancier)
@@ -57,14 +49,6 @@ public class ModelOCL {
 	}
 	//Charger le modèle OCL (Le chemin du modèle OCL, et le chemin vers la contrainte OCL textuelle que l'on veut avoir
 public void loadModel(String pathModel, String pathOCL){
-		/*
-		// Register the default resource factory -- only needed for stand-alone!
-		URI fileURI = URI.createFileURI(pathModel);
-		
-		// Load the ecore file
-		resourceModel = resSet.getResource(fileURI, true);
-				// Extract the root of the metamodel
-		*/
 	ResourceSet resourceSet = new ResourceSetImpl();
 	
 	// Register the default resource factory -- only needed for stand-alone!
@@ -79,12 +63,10 @@ public void loadModel(String pathModel, String pathOCL){
 		
 		
 		
-		EPackage metaModel = (EPackageImpl) resource.getContents().get(0);
+		//EPackage metaModel = (EPackageImpl) resource.getContents().get(0);
 		EList<EObject> modelContents=resource.getContents();
 				// Load OCL file
 
-				
-				
 		EPackage.Registry.INSTANCE.put(((EPackage) modelContents.get(0)).getName(), modelContents.get(0));
 				
 				//OCL<?, EClassifier, ?, ?, ?, ?, ?, ?, ?, Contrainte, EClass, EObject> ocl;
@@ -195,9 +177,9 @@ protected void XmlToOCL(String path) {
 		//test.OCLToXML ("./inputs/contr-xml.xmi");
 		//test.loadModel("src/BMethod.ecore", "src/BMethod.oclxmi");
 		//test.XmlToOCL("./inputs/xmlToOCl.oclxmi");
-		test.loadModel("./outputs/UML.ecore", "./inputs/C2.ocl");
-		//test.OCLToXML("./outputs/UMLC.xmi");
-		//test.XmlToOCL("./outputs/C1.xmi");
+		test.loadModel("./inputs/FlatUML.ecore", "./inputs/C10.ocl");
+		test.OCLToXML("./outputs/C10.xmi");
+		//test.XmlToOCL("./outputs/C3.xmi");
 		//test.OCLToXML("/home/echerfa/Desktop/Bad Smells/MM/OMG/UML/C1.txt");
 			
 		   

@@ -1,0 +1,6 @@
+context  UML::AcceptEventAction
+inv no_output_pins : (self.oclIsTypeOf(AcceptEventAction) and
+   (trigger->forAll(event.oclIsKindOf(ChangeEvent) or  
+                             event.oclIsKindOf(CallEvent))))
+implies output->size() = 0
+

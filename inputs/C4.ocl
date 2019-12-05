@@ -1,3 +1,3 @@
 context  UML::AcceptCallAction
 inv trigger_call_event : trigger->size()=1 and
-trigger→asSequence()→first().event.oclIsKindOf(CallEvent)
+trigger->asSequence()->first().event.oclIsKindOf(CallEvent)

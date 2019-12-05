@@ -1,0 +1,11 @@
+package undefined_root_package_name
+
+context Example
+--
+-- example invariant with a custom error message to verify that
+-- the 'feature' property of all 'undefined_root_package_name::Example' instances is non-null
+--
+inv NonNull_feature('The \'feature\' property of "' + self.toString() + '" is null'):
+	feature <> null
+
+endpackage

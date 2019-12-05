@@ -1,0 +1,10 @@
+context  UML::AcceptEventAction
+inv unmarshall_signal_events : isUnmarshall and self.oclIsTypeOf(AcceptEventAction) implies
+trigger->size()=1 and
+trigger->asSequence()->first().event.oclIsKindOf(SignalEvent) and
+let attribute: OrderedSet(Property) = trigger->asSequence()->first().event.oclAsType(SignalEvent).signal.allAttributes() in
+attribute->size()>0 and result->size() = attribute->size() and
+Sequence{1..result->size()}->forAll(i | 
+result->at(i).type = attribute->at(i).type and 
+result->at(i).isOrdered = attribute->at(i).isOrdered and
+result->at(i).includesMultiplicity(attribute->at(i)))

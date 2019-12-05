@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ocl.ecore:Constraint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore" name="no_output_pins" stereotype="invariant">
+  <specification xsi:type="ocl.ecore:ExpressionInOCL">
+    <bodyExpression xsi:type="ocl.ecore:OperationCallExp">
+      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+      <source xsi:type="ocl.ecore:OperationCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="//@specification/@contextVariable">
+            <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp">
+            <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/1/AcceptEventAction"/>
+            <referredType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+        </source>
+        <argument xsi:type="ocl.ecore:IteratorExp" name="forAll">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/2/Set(Trigger)"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="//@specification/@contextVariable">
+              <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="./inputs/FlatUML.ecore#//AcceptEventAction/trigger"/>
+          </source>
+          <body xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Event"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="//@specification/@bodyExpression/%/forAll/temp1">
+                  <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Trigger"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="./inputs/FlatUML.ecore#//Trigger/event"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp">
+                <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/1/ChangeEvent"/>
+                <referredType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//ChangeEvent"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+            </source>
+            <argument xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Event"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="//@specification/@bodyExpression/%/forAll/temp1">
+                  <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Trigger"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="./inputs/FlatUML.ecore#//Trigger/event"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp">
+                <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/1/CallEvent"/>
+                <referredType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//CallEvent"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="temp1">
+            <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Trigger"/>
+          </iterator>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
+      </source>
+      <argument xsi:type="ocl.ecore:OperationCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/2/OrderedSet(OutputPin)"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="//@specification/@contextVariable">
+              <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="./inputs/FlatUML.ecore#//Action/output"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/size"/>
+        </source>
+        <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="0">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+      </argument>
+      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/implies"/>
+    </bodyExpression>
+    <contextVariable xsi:type="ocl.ecore:Variable" name="self">
+      <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+    </contextVariable>
+  </specification>
+  <constrainedElements xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
+</ocl.ecore:Constraint>

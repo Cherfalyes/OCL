@@ -1,6 +1,5 @@
-import uml : 'http://www.eclipse.org/uml2/5.0.0/UML#/'
-
-context  uml::AcceptCallAction
+package UML
+context  AcceptCallAction
 
 inv result_pins: let parameter: OrderedSet(Parameter) = 
 trigger.event->asSequence()->first().oclAsType(CallEvent).operation.ownedParameter->select(direction=ParameterDirectionKind::_'in' or
@@ -10,4 +9,4 @@ Sequence{1..result->size()}->forAll(i |
 parameter->at(i).type.conformsTo(result->at(i).type) and 
 parameter->at(i).isOrdered = result->at(i).isOrdered and
 parameter->at(i).compatibleWith(result->at(i)))
-
+endpackage

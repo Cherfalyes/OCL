@@ -1,0 +1,7 @@
+context  UML::AcceptEventAction
+inv conforming_type : isUnmarshall = false implies 
+result->isEmpty() or
+let type: Type = result->first().type in
+type=null or 
+(trigger->forAll(event.oclIsKindOf(SignalEvent)) and 
+ trigger.event.oclAsType(SignalEvent).signal->forAll(s | s.conformsTo(type)))

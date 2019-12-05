@@ -10,5 +10,8 @@
 	<classpathentry kind="lib" path="lib/lpg.runtime.java_2.0.17.v201004271640.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.emf.common_2.15.0.v20180914-1817.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.ocl.common_1.8.100.v20181210-1441.jar"/>
+	<classpathentry kind="lib" path="lib/uml-5.0.0-v20140602-0749.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.ocl.pivot_1.6.0.v20181210-1441.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.ocl.uml_5.6.100.v20181210-1441.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

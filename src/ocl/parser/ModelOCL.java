@@ -177,8 +177,8 @@ protected void XmlToOCL(String path) {
 		//test.OCLToXML ("./inputs/contr-xml.xmi");
 		//test.loadModel("src/BMethod.ecore", "src/BMethod.oclxmi");
 		//test.XmlToOCL("./inputs/xmlToOCl.oclxmi");
-		test.loadModel("./inputs/FlatUML.ecore", "./inputs/C10.ocl");
-		test.OCLToXML("./outputs/C10.xmi");
+		test.loadModel("./inputs/FlatUML.ecore", "./inputs/C9.ocl");
+		test.OCLToXML("./outputs/C9.xmi");
 		//test.XmlToOCL("./outputs/C3.xmi");
 		//test.OCLToXML("/home/echerfa/Desktop/Bad Smells/MM/OMG/UML/C1.txt");
 			

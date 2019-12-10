@@ -1,5 +1,5 @@
-context UML::Actions::AcceptCallAction inv : 
-isUnmarshall = true
+context UML::AcceptCallAction inv : 
+not isUnmarshall
 
 
 

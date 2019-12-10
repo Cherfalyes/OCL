@@ -1,7 +1,3 @@
-package UML::CompleteActions
-
-context AcceptCallAction inv : 
+context UML::AcceptCallAction inv : 
 isUnmarshall = true
-
-endpackage
 

@@ -10,7 +10,10 @@
         </source>
         <referredProperty xsi:type="ecore:EAttribute" href="./inputs/FlatUML.ecore#//AcceptEventAction/isUnmarshall"/>
       </source>
-      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+      <argument xsi:type="ocl.ecore:BooleanLiteralExp" booleanSymbol="true">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+      </argument>
+      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/="/>
     </bodyExpression>
     <contextVariable xsi:type="ocl.ecore:Variable" name="self">
       <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptCallAction"/>

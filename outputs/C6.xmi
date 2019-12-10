@@ -6,7 +6,7 @@
       <source xsi:type="ocl.ecore:OperationCallExp">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
         <source xsi:type="ocl.ecore:PropertyCallExp">
-          <eType xsi:type="ecore:EDataType" href="types.ecore#//Boolean"/>
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="//@specification/@contextVariable">
             <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//AcceptEventAction"/>
           </source>
@@ -15,7 +15,7 @@
         <argument xsi:type="ocl.ecore:BooleanLiteralExp" booleanSymbol="false">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
         </argument>
-        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/="/>
       </source>
       <argument xsi:type="ocl.ecore:OperationCallExp">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
@@ -127,7 +127,7 @@
                   </iterator>
                 </source>
                 <body xsi:type="ocl.ecore:OperationCallExp">
-                  <eType xsi:type="ecore:EDataType" href="types.ecore#//Boolean"/>
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                   <source xsi:type="ocl.ecore:VariableExp" name="s" referredVariable="//@specification/@bodyExpression/%.1/%.1/%/%.1/forAll.1/s">
                     <eType xsi:type="ecore:EClass" href="./inputs/FlatUML.ecore#//Signal"/>
                   </source>

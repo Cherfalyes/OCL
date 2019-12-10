@@ -2617,8 +2617,8 @@
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The operation is determines if the upper and lower bound of the ranges are the ones given.&#xA;result = (lowerbound = self.lowerBound() and upperbound = self.upperBound())"/>
         </eAnnotations>
-        <eParameters name="lowerbound" ordered="false" lowerBound="1" eType="ecore:EDataType types.ecore#//Integer"/>
-        <eParameters name="upperbound" ordered="false" lowerBound="1" eType="ecore:EDataType types.ecore#//UnlimitedNatural"/>
+        <eParameters name="lowerbound" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInteger"/>
+        <eParameters name="upperbound" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInteger"/>
       </eOperations>
       <eOperations name="isMultivalued" ordered="false" lowerBound="1" eType="ecore:EDataType types.ecore#//Boolean">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
